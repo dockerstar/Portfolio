@@ -43,15 +43,27 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <aside class="sidepanel wow animate__animated animate__fadeInLeft">
+    <aside id="aside" class="sidepanel wow animate__animated animate__fadeInLeft">
         <div class="sidepanel__wrap ">
             <a href="#" class="sidepanel__wrap-link"><img src="icons/social/facebook_fff.svg" alt="facebook"></a>
             <a href="#" class="sidepanel__wrap-link"><img src="icons/social/instagram_fff.svg" alt="instagram"></a>
             <a href="#" class="sidepanel__wrap-link"><img src="icons/social/github_fff.svg" alt="github"></a>
         </div>
         <div class="sidepanel__divider"></div>
-        <div class="sidepanel__text"><span class="title title_fs16">Социальные сети</span></div>
+        <div id="aside_span" class="sidepanel__text"><span  class="title title_fs16">Социальные сети</span></div>
     </aside>
+
+    <!-- <div class="two_aside">
+        <aside class="sidepanel_black wow animate__animated animate__fadeInLeft">
+            <div class="sidepanel__wrap_black ">
+                <a href="#" class="sidepanel__wrap-link sidepanel__wrap-link_black"><img src="icons/social/facebook.svg" alt="facebook"></a>
+                <a href="#" class="sidepanel__wrap-link sidepanel__wrap-link_black"><img src="icons/social/instagram.svg" alt="instagram"></a>
+                <a href="#" class="sidepanel__wrap-link sidepanel__wrap-link_black"><img src="icons/social/github.svg" alt="github"></a>
+            </div>
+            <div class=" sidepanel__divider_black"></div>
+            <div class="sidepanel__text_black"><span class="title title_fs16_black">Социальные сети</span></div>
+        </aside>
+    </div> -->
 
     <div class="menu">
         <div class="menu__block">
@@ -182,6 +194,111 @@
             </div>
         </div>
     </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2 class="title title_fs16_black skills__suptitle">Навыки</h2>
+            <div class="title title_fs36_black skills__title">Что я использую в работе</div>
+            <div class="divider"></div>
+            <div class="skills__wrapper ">
+                <div class="skills__item wow animate__fadeInUp animate__animated" data-wow-duration="0.8s" data-wow-delay="1.4s">
+                    <img src="icons/skills/html5.svg" alt="html5" class="skills__item-icon">
+                    <div class="skills_jq">
+                        <div class="title title_fs14 skills__item-head">HTML5</div>
+                        <div class="skills__descr">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
+                    </div>
+                </div>
+                <div class="skills__item wow animate__fadeInUp animate__animated" data-wow-duration="0.8s" data-wow-delay="1.8s">
+                    <img src="icons/skills/css3.svg" alt="css3" class="skills__item-icon">
+                    <div class="skills_jq">
+                        <div class="title title_fs14 skills__item-head">CSS3</div>
+                        <div class="skills__descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
+                    </div>
+                </div>
+                <div class="skills__item wow animate__fadeInUp animate__animated" data-wow-duration="0.8s" data-wow-delay="2.2s">
+                    <img src="icons/skills/js.svg" alt="js" class="skills__item-icon">  
+                    <div class="skills_jq">          
+                        <div class="title title_fs14 skills__item-head">Java Script</div>
+                        <div class="skills__descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
+                    </div>
+                </div>
+                <div class="skills__item wow animate__fadeInUp animate__animated" data-wow-duration="0.8s" data-wow-delay="2.6s">
+                    <img src="icons/skills/jquery.svg" alt="jquery" class="skills__item-icon">  
+                    <div class="skills_jq">
+                        <div class="title title_fs14 skills__item-head">Jquery</div>
+                        <div class="skills__descr">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
+                    </div>
+                </div>
+                <div class="skills__item wow animate__fadeInUp animate__animated" data-wow-duration="0.8s" data-wow-delay="3s">
+                    <img src="icons/skills/react.svg" alt="react" class="skills__item-icon">
+                    <div class="skills_jq">
+                        <div class="title title_fs14 skills__item-head">React</div>
+                        <div class="skills__descr">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</div>
+                    </div>
+                </div>
+                <div class="skills__item wow animate__fadeInUp animate__animated" data-wow-duration="0.8s" data-wow-delay="3.4s">
+                    <img src="icons/skills/node.js.svg" alt="node" class="skills__item-icon">
+                    <div class="skills_jq">
+                        <div class="title title_fs14 skills__item-head">Node.js</div>
+                        <div class="skills__descr">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
+                    </div>
+                </div>
+                <div class="skills__item wow animate__fadeInUp animate__animated" data-wow-duration="0.8s" data-wow-delay="3.8s">
+                    <img src="icons/skills/mongo.db.svg" alt="mongo" class="skills__item-icon">
+                    <div class="skills_jq">
+                        <div class="title title_fs14 skills__item-head">Mongo.db</div>
+                        <div class="skills__descr">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="percent__wrapper">
+                <div class="percent__item">
+                    <div class="percent__head title title_fs14">Создание сайтов</div>
+                    <div class="percent__value">100%</div>
+                    <div class="percent__block">
+                        <div class="percent__block-show" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="percent__item">
+                    <div class="percent__head title title_fs14">Создание приложений</div>
+                    <div class="percent__value">85%</div>
+                    <div class="percent__block">
+                        <div class="percent__block-show" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="percent__item">
+                    <div class="percent__head title title_fs14">Работа с данными</div>
+                    <div class="percent__value">90%</div>
+                    <div class="percent__block">
+                        <div class="percent__block-show" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="percent__item">
+                    <div class="percent__head title title_fs14">Креативность</div>
+                    <div class="percent__value">75%</div>
+                    <div class="percent__block">
+                        <div class="percent__block-show" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="percent__item">
+                    <div class="percent__head title title_fs14">Создание дизайна</div>
+                    <div class="percent__value">90%</div>
+                    <div class="percent__block">
+                        <div class="percent__block-show" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="percent__item">
+                    <div class="percent__head title title_fs14">Soft skills</div>
+                    <div class="percent__value">95%</div>
+                    <div class="percent__block">
+                        <div class="percent__block-show" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
     <script src="js/script.js"></script>

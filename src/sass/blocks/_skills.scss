@@ -1,0 +1,85 @@
+.skills {
+    padding-top: 126px;
+    &__suptitle {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 10px 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        gap: 13px;
+    }
+    &_jq {
+        position: absolute;
+        top: 95px;
+        width: 211px;
+    }
+    &__item {
+        position: relative;
+        border: 1px solid #000;
+        padding: 30px;
+        &-head {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            }
+        }
+        &-icon {
+            height: 65px;
+        }
+    &__descr {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    }
+ }
+ .percent__wrapper {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 70px);
+    column-gap: 45px;
+    row-gap: 30px;
+}
+.percent__item {
+    padding-top: 10px;
+    position: relative;
+}
+.percent__value {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.percent__head {
+    padding-left: 10px;
+    @include before_circle;
+    &:before {
+        top: 3%;
+    }
+}
+.percent__block {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 14px;
+    background: #E8E4DE;
+    border-radius: 4px;
+    &-show {
+        height: 14px;
+        background: $main_color;
+        border-radius: 4px;
+    }
+}
