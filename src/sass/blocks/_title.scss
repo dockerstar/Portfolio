@@ -12,7 +12,25 @@
         font-size: 16px;
         line-height: 24px;
     }
+    &_fs16_black {
+        font-size: 16px;
+        line-height: 24px;
+        color: #000;
+    }
+    &_fs36 {
+        font-size: 36px;
+        line-height: 60px;
+    }
+    &_fs36_black {
+        font-size: 36px;
+        line-height: 60px;
+        color:#000;
+    }
     &_fs48 {
         font-size: 48px;
+    }
+    &_fs48_black {
+        font-size: 48px;
+        color:#000;
     }
 }
