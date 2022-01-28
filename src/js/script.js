@@ -13,6 +13,17 @@ menu.classList.remove('menu_active');
 });
 });
 
+const counters = document.querySelectorAll('.percent__value'),
+      lines = document.querySelectorAll('.percent__block-show');
+
+counters.forEach( (item, i) => {
+  lines[i].style.width = item.innerHTML;
+});
+
+
+
+
+
 /*
 $(window).scroll(function() {
     if ($(this).scrollTop() > 300) {

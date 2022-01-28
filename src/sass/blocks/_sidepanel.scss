@@ -42,7 +42,14 @@
     }
 
 }
-/*
+.aside_color {
+    color: #FFFFFF;
+}
+
+.aside_transparent {
+    background-color: transparent;
+}
+
 .two_aside {
     display: none;
 }
@@ -64,7 +71,7 @@
         height: 90px;
         img {
             &:hover {
-                box-shadow: 0 0 10px rgb(175, 19, 19);
+                box-shadow: 0 0 10px rgb(0, 0, 0);
                 border-radius: 100%;
                 transform: scale(1.2);
             }
@@ -86,4 +93,4 @@
             
         }
 }
-}*/
+}
