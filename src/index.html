@@ -70,12 +70,12 @@
             <div class="menu__close"><img src="icons/Close.svg" alt="Close"></div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__list-item"><a href="#">ПРО МЕНЯ</a></li>
-                    <li class="menu__list-item"><a href="#">МОЙ ОПЫТ</a></li>
-                    <li class="menu__list-item"><a href="#">МОИ НАВЫКИ</a></li>
-                    <li class="menu__list-item"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__list-item"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__list-item"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__list-item"><a href="#aboutme">ПРО МЕНЯ</a></li>
+                    <li class="menu__list-item"><a href="#resume">МОЙ ОПЫТ</a></li>
+                    <li class="menu__list-item"><a href="#skills">МОИ НАВЫКИ</a></li>
+                    <li class="menu__list-item"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__list-item"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__list-item"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -92,19 +92,24 @@
             <span class="long"></span>
             <span></span>
         </div>
+        <div class="hamburger__black">
+            <span class="long_1"></span>
+            <span class="long_2"></span>
+            <span class="long_3"></span>
+        </div>
         <div class="container">
             <div class="promo__main wow animate__zoomIn animate__animated">
                 <div class="title title_fs16 promo__suptitle">Меня зовут Dmitri Mikhaylov</div>
                 <h1 class="title title_fs48 promo__title">Я web-разработчик из города Москва</h1>
                 <div class="promo__btns">
-                    <a href="#" class="promo__link btn">Портфолио</a>
-                    <a href="#" class="promo__link">Про меня</a>
+                    <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                    <a href="#aboutme" class="promo__link">Про меня</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="aboutme">
+    <section id="aboutme" class="aboutme">
         <img src="img/main_photo.jpg" alt="main_photo" id="am_img" class="aboutme__img wow animate__fadeInLeft animate__animated">
         <div id="am_descr" class="aboutme__descr wow animate__fadeInRight animate__animated">
             <div class="title title_fs16_black aboutme__header">Про меня</div>
@@ -137,7 +142,7 @@
         </div>
     </section>
 
-    <section class="resume">
+    <section id="resume" class="resume">
         <div class="container">
             <h2 class="title title_fs16_black title__section-suptitle">Опыт</h2>
             <div class="title title_fs36_black title__title">Чем я буду полезен</div>
@@ -195,7 +200,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="container">
             <h2 class="title title_fs16_black title__section-suptitle">Навыки</h2>
             <div class="title title_fs36_black title__title">Что я использую в работе</div>
@@ -299,7 +304,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="title title_fs16_black title__section-suptitle">Портфолио</h2>
             <div class="title title_fs36_black title__title">Мои работы</div>
@@ -327,7 +332,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section id="price" class="price">
         <div class="container">
             <h2 class="title title_fs16_black title__section-suptitle">Прайс-лист</h2>
             <div class="divider"></div>
@@ -370,7 +375,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <img src="img/main_photo.jpg" alt="main_photo" id="am_img" class="contacts__img wow animate__fadeInLeft animate__animated">
@@ -394,24 +399,36 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="emal" type="email">
+                            <input required name="email" id="emal" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
-                            <textarea name="text" id="text" ></textarea>
+                            <textarea  name="text" id="text" ></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <button class="btn contacts__btn">Отправить сообщение</button>
+                        <div class="contacts__trigger">
+                            <button class="btn contacts__btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <div class="scrollup">
+        <img src="icons/scrollup.svg" alt="scroll">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="js/script_wow.js"></script>
     <script src="js/wow.min.js"></script>
