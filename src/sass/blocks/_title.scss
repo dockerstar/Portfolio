@@ -38,4 +38,18 @@
         font-size: 48px;
         color:#000;
     }
+    &__section-suptitle {
+        margin-top: 120px;
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+    }
 }
