@@ -34,15 +34,12 @@ counters.forEach( (item, i) => {
   lines[i].style.width = item.innerHTML;
 });
 
-$(document).ready(function(){
-  $(".menu__list, .promo__btns").on("click","a", function (event) {
-      event.preventDefault();
-      var id  = $(this).attr('href'),
-          top = $(id).offset().top;
-      $('body,html').animate({scrollTop: top}, 1500);
-  });
-});
 
+$("a[href^='#']").click(function() {
+  const _href = $(this).attr("href");
+  $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+  return false;
+});
 
 
 
