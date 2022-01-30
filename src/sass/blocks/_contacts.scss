@@ -6,9 +6,14 @@
         display: grid;
         margin: 0 auto;
         grid-template-columns: 400px 580px;
-        grid-template-rows: minmax(280px, auto) minmax(240px, auto);
+        grid-template-rows: 280px;
         column-gap: 70px;
         row-gap: 40px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
     &__text {
         margin-top: 20px;
@@ -22,7 +27,9 @@
         grid-auto-flow: column;
         gap: 25px;
         img {
+            height: 100%;
             width: 100%;
+            object-fit: cover;
             &:hover {
                 transform: scale(1.15);
                 box-shadow: 0 0 5px #000;
