@@ -1,7 +1,7 @@
 $(window).scroll(function() {
   if ($(this).scrollTop() > 300) {
-    $('.two_aside').fadeIn();
-    $('.sidepanel').fadeOut();
+      $('.two_aside').fadeIn();
+      $('.sidepanel').fadeOut();
     $('.hamburger__black').fadeIn();
     $('.hamburger').fadeOut();
   } else {

@@ -4,7 +4,7 @@
         margin-top: 120px;
     }
     &__wrapper {
-        margin-top: 60px;
+        margin-top: 5px;
         display: grid;
         grid-template-columns: repeat(4, 280px);
         grid-template-rows: repeat(2, 280px);
@@ -19,12 +19,18 @@
             grid-column: 2 / 4;
         }
     }
+    .design {
+        grid-template-columns: repeat(2, 500px);
+        grid-template-rows: 1300px;
+        grid-auto-rows: 1300px;
+        justify-content: space-around;
+    }
     &__item {
         transition: 0.6s all;
         img {
             height: 100%;
             width: 100%;
-            object-fit: cover;
+            object-fit:contain;
         }
         &:hover {
             transform: scale(1.03);
