@@ -41,6 +41,52 @@ $("a[href^='#']").click(function() {
   return false;
 });
 
+/*
+$(document).ready(function(){
+function validateForms(form){
+  $(form).validate({
+    rules: {
+      name: "required",
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      name: "Пожалуйста введите свое имя",
+      email: {
+        required: "Пожалуйста введите свою почту",
+        email: "Неправильно введен адрес почты"
+      }
+    }
+  }
+  );
+}
+
+validateForms('#contacts form');
+});
+*/
+$(document).ready(function(){
+$('form').submit(function(e) {
+  e.preventDefault();
+
+  $.ajax({
+    type: "POST",
+    url: "mailer/smart.php",
+    data: $(this).serialize()
+  }).done(function() {
+    $(this).find("input").val("");
+    /*$('#consultat, #order').fadeOut();
+    $('.overlay, #thanks').fadeIn('slow');*/
+
+    $('form').trigger('reset');
+  });
+  return false;
+});
+});
+
+
+
 
 
 
