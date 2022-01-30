@@ -28,13 +28,14 @@
     right: 30px;
     cursor: pointer;
     display: none;
+    background: transparent;
     span.long_1, .long_3 {
         display: block;
         width: 30px;
         height: 3px;
         background: rgb(0, 0, 0);
         margin-bottom: 5px;
-        margin-left: 6px;   
+        margin-left: 6px;  
     }
     span.long_2 {
         width: 36px;

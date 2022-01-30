@@ -1,4 +1,4 @@
-@media (max-width: 1400px) {
+@media (max-width: 1439px) {
     .container {
         max-width: 1140px;
     }
@@ -12,11 +12,32 @@
     .container {
         max-width: 960px;
     }
+    .aboutme {
+        grid-template-columns: 400px 460px;
+        column-gap: 50px;
+        &__skills {
+            column-gap: 15px;
+            grid-template-columns: repeat(2, 235px);
+        }
+    }
 }
 
 @media (max-width: 991px) {
     .container {
         max-width: 720px;
+    }
+    .title {
+        &_fs36_black {
+            font-size: 30px;
+        }
+    }
+    .aboutme {
+        grid-template-columns: 300px 325px;
+        column-gap: 40px;
+        &__skills {
+            column-gap: 15px;
+            grid-template-columns: repeat(1, 250px);
+        }
     }
 }
 
@@ -24,11 +45,84 @@
     .container {
         max-width: 540px;
     }
+    .title {
+        &_fs48 {
+            font-size: 28px;
+        }
+    }
+    .promo {
+        &__title {
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+    .hamburger__black, .hamburger {
+        position: absolute;
+    }
+    .aboutme {
+        margin-top: 80px;
+        #am_descr {
+            grid-column: auto;
+            grid-row: auto;
+        }
+        #am_skills{
+            grid-column: auto;
+            grid-row: auto;
+            grid-template-rows: repeat(1, 140px);
+            margin-left: 20px;
+        }
+        #am_img {
+            display: none;
+        }
+        grid-template-columns: 540px;
+        grid-template-rows: 250px auto;
+        grid-auto-rows: 400px;
+        grid-auto-flow: row;
+        &__skills {
+            grid-template-columns: repeat(2, 250px);
+        }
+    }
 }
 
 @media (max-width: 575px) {
     .container {
         max-width: 100%;
         padding: 0 10px;
+    }
+    .title {
+        &_fs48 {
+            font-size: 26px;
+        }
+        &_fs36_black {
+            font-size: 24px;
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .promo {
+        background: url(../img/main_bg.jpg) no-repeat 63%/cover;
+        &__btns {
+            margin-top: 35px;
+        }
+    }
+    .aboutme {
+        grid-template-columns: 100%;
+        grid-template-rows: 340px auto;
+        row-gap: 5px;
+        &__skills {
+            width: 240px;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(2, 116px);
+            &-item {
+                justify-content: space-around;
+            }
+        }
     }
 }
