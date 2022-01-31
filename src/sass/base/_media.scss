@@ -112,6 +112,17 @@
             }
         }
     }
+    .price {
+        &__column {
+            grid-template-rows: repeat(1, 44px);
+        }
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 367px);
+            grid-template-rows: minmax(44px, auto);
+            justify-content: space-around;
+            row-gap: 20px;
+        }
+    }
     
 }
 
