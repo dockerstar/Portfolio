@@ -188,6 +188,7 @@
     }
     .resume {
         &__wrapper {
+            padding: 65px 0 0 20px ;
             column-gap: 20px;
             grid-template-columns: repeat(1, 275px);
         }
