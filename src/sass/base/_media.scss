@@ -38,6 +38,21 @@
         grid-auto-rows: 70px;
         column-gap: 150px;
     }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: space-around;
+            row-gap: 20px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+        .design {
+            grid-template-columns: repeat(auto-fit, 450px);
+            justify-content: space-around;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -80,6 +95,22 @@
         grid-template-columns: repeat(2, 300px);
         grid-auto-rows: 70px;
         column-gap: 80px;
+    }
+    .portfolio {
+        .title__subtitle {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .design {
+            grid-template-columns: repeat(auto-fit, 350px);
+            justify-content: space-around;
+        }
+        .photo, .oksana {
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
     }
     
 }
@@ -133,13 +164,15 @@
     }
     .skills {
         &__wrapper {
-            grid-template-columns: repeat(2, 238px);
+            grid-template-columns: repeat(auto-fit, 238px);
+            justify-content: space-around;
             grid-auto-rows: 270px;
             gap: 40px;
         }
     }
     .percent__wrapper {
-        grid-template-columns: repeat(1, 350px);
+        grid-template-columns: repeat(auto-fit, 350px);
+        justify-content: space-around;
         grid-auto-rows: 70px;
         column-gap: 150px;
     }
